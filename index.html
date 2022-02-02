@@ -8,58 +8,86 @@
 </head>
 
 <body>
-  <!-- <div class="box">
-          <h3>Δημιουργία πράξεων με δύο όρους</h3>
-          <p>Πόσες εξισώσεις:</p>
-          <p>Πόσες εξισώσεις:</p>
-      </div> -->
   <div class="box">
-    <fieldset>
+    <fieldset class="container-fluid">
       <legend>Δημιουργία πράξεων με δύο όρους</legend>
-      <label for="exisoseis">Πόσες εξισώσεις:</label>
-      <input type="number" id="exisoseis" name="exisoseis" /><br />
-      <label for="psifia">Πόσα ψηφία θα έχουν οι αριθμοί:</label>
-      <select name="psifia" id="psifia">
-        <optgroup label="Μονοψήφιοι">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </optgroup>
-        <optgroup label="2ψήφιοι">
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">17</option>
-          <option value="18">18</option>
-        </optgroup>
-      </select><br />
-      <label for="prakseis">Πόσες πράξεις να περιλαμβάνουν; </label>
-      <label for="praksi1">+</label>
-      <input type="checkbox" id="praksi1" name="praksi1" />
-      <label for="praksi2">-</label>
-      <input type="checkbox" id="praksi2" name="praksi2" />
-      <label for="praksi3">x</label>
-      <input type="checkbox" id="praksi3" name="praksi3" />
-      <label for="praksi4">/</label>
-      <input type="checkbox" id="praksi4" name="praksi4" />
-      <br />
-      <p>
-        <button onclick="calc()">Υπολογισμός</button>
-        <button onclick="clean()">Καθαρισμός</button>
-        <button onclick="window.print()">Εκτύπωση</button>
-      </p>
-      <p class="p">error</p>
-    </fieldset>
+      <div class="col">
+        <div class="row padding-sm">
+          <div class="col-6">
+            <label for="exisoseis">Πόσες εξισώσεις:</label>
+          </div>
+          <div class="col-6">
+            <input type="number" id="exisoseis" name="exisoseis" />
+          </div>
+        </div>
+        <div class="row padding-sm">
+          <div class="col-6"> <label for="psifia">Πόσα ψηφία θα έχουν οι αριθμοί:</label>
+          </div>
+          <div class="col-6">
+            <select name="psifia" id="psifia">
+              <optgroup label="Μονοψήφιοι">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </optgroup>
+              <optgroup label="2ψήφιοι">
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <div class="row padding-sm">
+          <div class="col-6"> <label for="prakseis">Πόσες πράξεις να περιλαμβάνουν; </label>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                <label for="praksi1">+</label>
+                <input type="checkbox" id="praksi1" name="praksi1" />
+              </div>
+              <div class="col-3">
+                <label for="praksi3">x</label>
+                <input type="checkbox" id="praksi3" name="praksi3" />
+              </div>
+              <div class="col-3">
+                <label for="praksi4">/</label>
+                <input type="checkbox" id="praksi4" name="praksi4" />
+              </div>
+              <div class="col-3">
+                <label for="praksi2">-</label>
+                <input type="checkbox" id="praksi2" name="praksi2" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row padding-sm">
+        <div class="col-4 flex-center">
+          <button onclick="calc()">Υπολογισμός</button>
+        </div>
+        <div class="col-4 flex-center">
+          <button onclick="clean()">Καθαρισμός</button>
+        </div>
+        <div class="col-4 flex-center">
+          <button onclick="window.print()">Εκτύπωση</button>
+        </div>
+      </div>
+  </div>
+  </fieldset>
   </div>
 </body>
 
