@@ -18,6 +18,7 @@ function calc() {
   console.log(praksi3);
   praksi4 = document.getElementById("praksi4").checked;
   console.log(praksi4);
+  alert("Τέλεια!!!\n Θα υπολογίσω τώρα");
 }
 
 function clean() {
