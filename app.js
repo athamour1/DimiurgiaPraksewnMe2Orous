@@ -25,8 +25,6 @@ function calc() {
   if (praksi4) {
     prakseis.push("-")
   }
-  console.log("prakseis: ", prakseis)
-  console.log("prakseis: ", prakseis.length > 0)
   var error = document.getElementById("error");
   var resultMessage = document.getElementById("resultMessage");
   var results = document.getElementById("results")
@@ -39,10 +37,8 @@ function calc() {
       let number1 = Math.floor(Math.random() * (10 * psifia))
       let praksi = prakseis[Math.floor(Math.random() * prakseis.length)]
       let number2 = Math.floor(Math.random() * (10 * psifia))
-      console.log(number1 + praksi + number2 + "=")
       stringResult += "<div class='row'><div class='red col-1-ss'>" + (index+1) + ") </div><div class='col-4'>" + number1 + " " + praksi + " " + number2 + " " + "=" + "</div><div class='col-7'></div></div><div class='row'><hr style='border: 1px dashed #adadad; width: 100%;' /></div>"
     }
-    console.log(stringResult)
     results.innerHTML = stringResult
   } else {
     // error.style.color = "red"
