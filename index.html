@@ -4,11 +4,11 @@
 <head>
   <script type="text/javascript" src="app.js"></script>
   <link rel="stylesheet" href="styles.css" />
-  <title>Ιστοσελίδα υπολογισμών</title>
+  <title>Φόρμα δημιουργία πράξεων με δύο όρους</title>
 </head>
 
 <body>
-  <div class="box">
+  <div class="box no-print">
     <fieldset class="container-fluid">
       <legend>Δημιουργία πράξεων με δύο όρους</legend>
       <div class="col">
@@ -60,34 +60,39 @@
                 <input type="checkbox" id="praksi1" name="praksi1" />
               </div>
               <div class="col-2">
-                <label for="praksi3">x</label>
-                <input type="checkbox" id="praksi3" name="praksi3" />
+                <label for="praksi2">x</label>
+                <input type="checkbox" id="praksi2" name="praksi3" />
               </div>
               <div class="col-2">
-                <label for="praksi4">/</label>
-                <input type="checkbox" id="praksi4" name="praksi4" />
+                <label for="praksi3">/</label>
+                <input type="checkbox" id="praksi3" name="praksi4" />
               </div>
               <div class="col-2">
-                <label for="praksi2">-</label>
-                <input type="checkbox" id="praksi2" name="praksi2" />
+                <label for="praksi4">-</label>
+                <input type="checkbox" id="praksi4" name="praksi2" />
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row padding-sm">
-        <div class="col-4 flex-center">
+        <div class="col-4">
           <button onclick="calc()">Υπολογισμός</button>
         </div>
-        <div class="col-4 flex-center">
+        <div class="col-4">
           <button onclick="clean()">Καθαρισμός</button>
         </div>
-        <div class="col-4 flex-center">
+        <div class="col-4">
           <button onclick="window.print()">Εκτύπωση</button>
         </div>
       </div>
   </div>
   </fieldset>
+  <p id="error" class="no-print"></p>
+  <p id="resultMessage"></p>
+  <hr>
+  <div id="results">
+  </div>
   </div>
 </body>
 

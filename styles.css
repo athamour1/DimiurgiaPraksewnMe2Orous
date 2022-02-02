@@ -30,6 +30,28 @@
     flex-wrap: wrap;
 }
 
+#error {
+    color: red
+}
+
+#resultMessage {
+    text-align: center;
+    font-size: 35px;
+}
+
+#results {
+    font-size: 30px;
+}
+
+@media print {
+    .no-print {display: none}
+}
+
+.red {
+    color: red;
+    width: 80px;
+}
+
 .col,
 .col-1,
 .col-2,
