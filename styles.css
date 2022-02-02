@@ -1,0 +1,10 @@
+.box{
+    width: 500px;
+    height: 200px;
+    background-color: rgb(194, 194, 194);
+    padding: 5px;
+}
+
+.p{
+    color: red;
+}

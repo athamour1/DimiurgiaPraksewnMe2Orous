@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Ιστοσελίδα υπολογισμών</title>
+</head>
+
+<body>
+  <!-- <div class="box">
+          <h3>Δημιουργία πράξεων με δύο όρους</h3>
+          <p>Πόσες εξισώσεις:</p>
+          <p>Πόσες εξισώσεις:</p>
+      </div> -->
+  <div class="box">
+    <fieldset>
+      <legend>Δημιουργία πράξεων με δύο όρους</legend>
+      <label for="exisoseis">Πόσες εξισώσεις:</label>
+      <input type="number" id="exisoseis" name="exisoseis" /><br />
+      <label for="psifia">Πόσα ψηφία θα έχουν οι αριθμοί:</label>
+      <select name="psifia" id="psifia">
+        <optgroup label="Μονοψήφιοι">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </optgroup>
+        <optgroup label="2ψήφιοι">
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+        </optgroup>
+      </select><br />
+      <label for="prakseis">Πόσες πράξεις να περιλαμβάνουν; </label>
+      <label for="praksi1">+</label>
+      <input type="checkbox" id="praksi1" name="praksi1" />
+      <label for="praksi2">-</label>
+      <input type="checkbox" id="praksi2" name="praksi2" />
+      <label for="praksi3">x</label>
+      <input type="checkbox" id="praksi3" name="praksi3" />
+      <label for="praksi4">/</label>
+      <input type="checkbox" id="praksi4" name="praksi4" />
+      <br />
+      <p>
+        <button onclick="calc()">Υπολογισμός</button>
+        <button onclick="clean()">Καθαρισμός</button>
+        <button onclick="window.print()">Εκτύπωση</button>
+      </p>
+      <p class="p">error</p>
+    </fieldset>
+  </div>
+</body>
+
+</html>
